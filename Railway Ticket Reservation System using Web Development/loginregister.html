@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title> login and reg form</title>
+    <link rel="stylesheet" href="style_login.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign-Up</button>
+            </div>
+            <div class="social-icons">
+                <img src="twitter.jpg">
+                <img src="fb.jpg">
+                <img src="insta.jpg">
+            </div>
+            <form id="login" class="input-group" action="login.php" method="POST">
+                <input type="text" class="input-field" placeholder="Enter User Id" required name="id">
+                <input type="password" class="input-field" placeholder="Enter Password" required name="pass">
+                <br><br><br>
+                <button type="submit" class="Submit-btn">Login</button>
+            </form>
+            <form id="sign-up" class="input-group"  action=" reg.php" method="POST">
+                <input type="text" class="input-field" name="uid" placeholder="Enter User Id" required>
+                <input type="email" class="input-field" name="uem" placeholder="Enter Email Id" required>
+                <input type="password" class="input-field" name="upas" placeholder="Enter Password" required>
+                <br><br><br>
+                <button type="submit" class="Submit-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var a = document.getElementById("login");
+        var b = document.getElementById("sign-up");
+        var c = document.getElementById("btn");
+
+        function signup() {
+            a.style.left = "-400px";
+            b.style.left = "50px";
+            c.style.left = "110px";
+        }
+
+        function login() {
+            a.style.left = "50px";
+            b.style.left = "450px";
+            c.style.left = "0";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<html>
+<head>
+<title>RESERVATION FORM</title>
+<style>
+*{padding:0;
+   margin:0;
+}
+.outer{
+	height:100%;
+	width:100%;
+	background-image:url("train_bg.jpg");
+	background-size:100% 100%;
+	position:absolute;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.input-group{
+	top:50px;
+	position:absolute;
+	width:280px;
+	transition:1s;
+	color:white;
+	padding-left: 90px;
+}
+.input-field{
+	width:100%;
+	padding:10px 0;
+	margin:5px 0;
+	border:0;
+	outline:none;
+	background:transparent;
+	left:270px;
+	position:relative;
+	top:-59px;
+	color:white;
+}
+.input-field1{
+    width:100%;
+	padding:10px 0;
+	margin:5px 0;
+	border:0;
+	color:white;
+	outline:none;
+	background:transparent;
+	position:relative;
+	left:270px;
+	line-height:40px;
+}
+.input-field2{
+    width:100%;
+	padding:10px 0;
+	margin:5px 0;
+	border:0;
+	color:white;
+	outline:none;
+	background:transparent;
+	position:relative;
+	left:800px;
+	top:-71px;
+	line-height:40px;
+}
+
+.input-field3{
+    width:100%;
+	padding:10px 0;
+	margin:5px 0;
+	border:0;
+	color:white;
+	outline:none;
+	background:transparent;
+	position:relative;
+	left:802px;
+	top:-10px;
+}
+.input-field4{
+    width:100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-right:0;
+	border-top:0;
+	border-bottom:1px solid #000000;
+	color:white;
+	outline:none;
+	background:transparent;
+	position:relative;
+	top:-30px;
+	left:455px;
+	line-height:15px;
+}
+.tableinput{
+    padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-right:0;
+	border-top:0;
+	border-bottom:1px solid #000000;
+	color:white;
+	outline:none;
+	background:transparent;
+}
+table{
+position:relative;
+top:0px;
+left:250px;
+line-height:15px;
+color:white;
+margin-right:auto;
+width:100%;
+padding:10px 0;
+margin:5px 0;
+border-left:0;
+border-right:0;
+border-top:0;
+outline:none;
+background:transparent;
+}
+#registerform{
+left:50px;
+position:absolute;
+width:280px;
+transition:1s;
+}
+#btn{	
+position:relative;
+background:linear-gradient(to right,blue,purple);
+left:435px;
+top:-35px;
+border-radius:30px;
+transition:1s;
+}
+::placeholder{
+color:white;
+}
+.buttonn {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    left: 600px;
+    background-color: #4eb5f1;
+    text-align: center;
+    transition: all 0.2s;
+    left: 900px;
+}
+</style>
+</head>
+<body>
+<div class="outer">
+<center><h2 style="color: white;padding-top: 10px;">RESERVATION FORM</h2></center>
+<form id="registerform" class="input-group" action="registration.php" method="POST"><br><br><center>
+<input type="text" class="input-field1" name="boarding" placeholder="Enter the boarding" required>
+<input type="text" class="input-field2" name="destination" placeholder="Enter the destination" required>
+<input type="number" class="input-field3" name="tnum" placeholder="Train number"required>
+<input type="text" class="input-field" name="tname" placeholder="Train Name" required>
+<input type="Date" name="tdate" class="input-field4" required>
+<table>
+<tr>
+<th>S.No</th>
+<th>Passenger Name</th>
+<th>Age</th>
+<th>Gender</th>
+<th>Aadhar Number</th>
+</tr>
+<tr>
+<td>1</td>
+<td><input type="text" name="p1" class="tableinput"placeholder="Passenger 1"required></td>
+<td><input type="number" name="age1" class="tableinput" placeholder="age" required></td>
+<td><input type="text" name="gender1" class="tableinput" placeholder="gender" required></td>
+<td><input type="number" name="aadhar_no1" class="tableinput" placeholder="Aadhar Number"required></td>
+</tr>
+<tr>
+<td>2</td>
+<td><input type="text" name="p2" class="tableinput" placeholder="Passenger 2"></td>
+<td><input type="number" name="age2" class="tableinput" placeholder="age"></td>
+<td><input type="text" name="gender2" class="tableinput" placeholder="gender"></td>
+<td><input type="number" name="aadhar_no2" class="tableinput" placeholder="Aadhar Number"></td>
+</tr>
+<tr>
+<td>3</td>
+<td><input type="text" name="p3" class="tableinput" placeholder="Passenger 3"></td>
+<td><input type="number" name="age3" class="tableinput" placeholder="age"></td>
+<td><input type="text" name="gender3" class="tableinput" placeholder="gender"></td>
+<td><input type="number" name="aadhar_no3" class="tableinput" placeholder="Aadhar Number"></td>
+</tr>
+<tr>
+<td>4</td>
+<td><input type="text" name="p4" class="tableinput" placeholder="Passenger 4"></td>
+<td><input type="number" name="age4" class="tableinput" placeholder="age"></td>
+<td><input type="text" name="gender4" class="tableinput" placeholder="gender"></td>
+<td><input type="number" name="aadhar_no4" class="tableinput" placeholder="Aadhar Number"></td>
+</tr>
+<tr>
+<td>5</td>
+<td><input type="text" name="p5" class="tableinput" placeholder="Passenger 5"></td>
+<td><input type="number" name="age5" class="tableinput" placeholder="age"></td>
+<td><input type="text" name="gender5" class="tableinput" placeholder="gender"></td>
+<td><input type="number" name="aadhar_no5" class="tableinput" placeholder="Aadhar Number"></td>
+</tr>
+</table>
+<br>
+<center style="padding-left: 560px;">
+<button type="submit" class="buttonn">Book</button>
+</center>
+</form>
+</div>
+</body>
+</html>
